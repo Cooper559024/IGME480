@@ -1,9 +1,9 @@
 {
-  "name": "Bad Vowels",
-  "short_name": "Bad Vowels",
+  "name": "Bad T",
+  "short_name": "Bad T",
   "manifest_version": 2,
   "version": "1.0",
-  "description": "Replaces all vowels with a red comic sans version of that same vowel.",
+  "description": "Replaces the letter T with a red Comic Neue T.",
   "author": "Aidan McMurray",
 
   "content_scripts": [

@@ -1,4 +1,4 @@
-const text = document.querySelectorAll(" p, li, td, caption");
+const text = document.querySelectorAll("h1, h2, h3, h4, h5 p, li, td, caption");
 
 let link = document.createElement("link");
 link.setAttribute("rel", "stylesheet");
@@ -10,26 +10,17 @@ link.setAttribute(
 document.head.appendChild(link);
 
 for (let i = 0; i < text.length; i++) {
-  if (text[i].innerHTML.includes("a" || "e" || "i" || "o" || "u")) {
+  if (text[i].innerHTML.includes("t")) {
     let content = text[i].innerHTML;
     let individual = content.split("");
 
     for (let j = 0; j < individual.length; j++) {
-      if (individual[j] == "a") {
+      if (individual[j] === "t") {
         individual[j] =
-          '<span style="font-family: Comic Neue; color: #FF0000;">a</span>';
-      } else if (individual[j] == "e") {
+          '<span style="font-family: Comic Neue; font-size: 1.5em; color: #ff0000;">t</span>';
+      } else if (individual[j] === "T") {
         individual[j] =
-          '<span style="font-family: Comic Neue; color: #FF0000;">e</span>';
-      } else if (individual[j] == "i") {
-        individual[j] =
-          '<span style="font-family: Comic Neue; color: #FF0000;">i</span>';
-      } else if (individual[j] == "o") {
-        individual[j] =
-          '<span style="font-family: Comic Neue; color: #FF0000;">o</span>';
-      } else if (individual[j] == "u") {
-        individual[j] =
-          '<span style="font-family: Comic Neue; color: #FF0000;">u</span>';
+          '<span style="font-family: Comic Neue; font-size: 1.5em; color: #ff0000;">T</span>';
       }
     }
 
