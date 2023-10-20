@@ -1,0 +1,17 @@
+{
+  "name": "Bad Vowels",
+  "short_name": "Bad Vowels",
+  "manifest_version": 2,
+  "version": "1.0",
+  "description": "Replaces all vowels with a red comic sans version of that same vowel.",
+  "author": "Aidan McMurray",
+
+  "content_scripts": [
+    {
+      "matches": ["*://*/*"],
+      "all_frames": true,
+      "js": ["content.js"],
+      "run_at": "document_end"
+    }
+  ]
+}
